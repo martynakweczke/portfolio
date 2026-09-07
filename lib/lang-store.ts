@@ -8,7 +8,9 @@ const listeners = new Set<() => void>();
 let hydrated = false;
 
 const emit = () => {
-  for (const listener of listeners) listener();
+  for (const listener of listeners) {
+    listener();
+  }
 };
 
 const storedLang = (): Lang | null => {
@@ -21,14 +23,18 @@ const currentLang = (): Lang => storedLang() ?? siteConfig.defaultLang;
 export const langStore = {
   subscribe: (listener: () => void) => {
     listeners.add(listener);
+
     return () => {
-      listeners.delete(listener);
+      listeners.delete(listener); 
     };
   },
   getSnapshot: (): Lang => (hydrated ? currentLang() : siteConfig.defaultLang),
   getServerSnapshot: (): Lang => siteConfig.defaultLang,
   markHydrated: () => {
-    if (hydrated) return;
+    if (hydrated) {
+      return;
+    }
+    
     hydrated = true;
     emit();
   },

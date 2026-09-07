@@ -10,11 +10,16 @@ let hydrated = false;
 let mediaCleanup: (() => void) | null = null;
 
 const emit = () => {
-  for (const listener of listeners) listener();
+  for (const listener of listeners) {
+    listener();
+  }
 };
 
 const systemTheme = (): Theme => {
-  if (typeof window === "undefined" || !window.matchMedia) return "light";
+  if (typeof window === "undefined" || !window.matchMedia) {
+    return "light";
+  }
+  
   return window.matchMedia(QUERY).matches ? "dark" : "light";
 };
 
@@ -41,10 +46,14 @@ export const themeStore = {
     ) {
       const media = window.matchMedia(QUERY);
       const onChange = () => {
-        if (storedTheme()) return;
+        if (storedTheme()) {
+          return;
+        }
+
         applyTheme(media.matches ? "dark" : "light");
         emit();
       };
+
       media.addEventListener("change", onChange);
       mediaCleanup = () => media.removeEventListener("change", onChange);
     }
@@ -59,7 +68,10 @@ export const themeStore = {
   getSnapshot: (): Theme => (hydrated ? currentTheme() : "light"),
   getServerSnapshot: (): Theme => "light",
   markHydrated: () => {
-    if (hydrated) return;
+    if (hydrated) {
+      return;
+    }
+
     hydrated = true;
     emit();
   },
