@@ -1,26 +1,182 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --bg: #f3f2f2;
+  --bg-alt: #eae9e9;
+  --card: #f3f2f2;
+  --ink: #201f1d;
+  --ink-2: #35322d;
+  --ink-3: #4a4741;
+  --muted: #6b6862;
+  --line: #d6d4d1;
+  --gold: #b68235;
+  --gold-ink: #7d5a24;
+  --gold-soft: rgba(182, 130, 53, 0.12);
+  --sel: rgba(182, 130, 53, 0.22);
+  --shadow: rgba(32, 31, 29, 0.5);
+  --header-bg: rgba(243, 242, 242, 0.9);
+  --band-bg: #171614;
+  --band-ink: #f3f2f2;
+  --band-ink-2: #d8d5cf;
+  --band-muted: #9a968d;
+  --band-line: #3a3833;
+  --band-gold: #c9a25f;
+  --img: sepia(0.1) contrast(1.02) saturate(0.9);
+  --theme-dot: transparent;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #191817;
+  --bg-alt: #211f1d;
+  --card: #1e1d1b;
+  --ink: #f0eeea;
+  --ink-2: #d3cfc7;
+  --ink-3: #b6b1a7;
+  --muted: #918c83;
+  --line: #34322e;
+  --gold: #c9a25f;
+  --gold-ink: #d6b374;
+  --gold-soft: rgba(201, 162, 95, 0.14);
+  --sel: rgba(201, 162, 95, 0.26);
+  --shadow: rgba(0, 0, 0, 0.8);
+  --header-bg: rgba(25, 24, 23, 0.9);
+  --band-bg: #100f0e;
+  --band-ink: #f0eeea;
+  --band-ink-2: #cdc9c1;
+  --band-muted: #8c8880;
+  --band-line: #2c2a26;
+  --band-gold: #d6b374;
+  --img: sepia(0.04) contrast(1.02) saturate(0.85) brightness(0.94);
+  --theme-dot: var(--gold);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #191817;
+    --bg-alt: #211f1d;
+    --card: #1e1d1b;
+    --ink: #f0eeea;
+    --ink-2: #d3cfc7;
+    --ink-3: #b6b1a7;
+    --muted: #918c83;
+    --line: #34322e;
+    --gold: #c9a25f;
+    --gold-ink: #d6b374;
+    --gold-soft: rgba(201, 162, 95, 0.14);
+    --sel: rgba(201, 162, 95, 0.26);
+    --shadow: rgba(0, 0, 0, 0.8);
+    --header-bg: rgba(25, 24, 23, 0.9);
+    --band-bg: #100f0e;
+    --band-ink: #f0eeea;
+    --band-ink-2: #cdc9c1;
+    --band-muted: #8c8880;
+    --band-line: #2c2a26;
+    --band-gold: #d6b374;
+    --img: sepia(0.04) contrast(1.02) saturate(0.85) brightness(0.94);
+    --theme-dot: var(--gold);
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-gold: var(--gold);
+  --color-gold-ink: var(--gold-ink);
+  --color-gold-soft: var(--gold-soft);
+  --color-sel: var(--sel);
+  --color-shadow: var(--shadow);
+  --color-header-bg: var(--header-bg);
+  --color-band-bg: var(--band-bg);
+  --color-band-ink: var(--band-ink);
+  --color-band-ink-2: var(--band-ink-2);
+  --color-band-muted: var(--band-muted);
+  --color-band-line: var(--band-line);
+  --color-band-gold: var(--band-gold);
+  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-serif: var(--font-lora), Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-lora), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+a {
+  color: var(--gold-ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--sel);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
