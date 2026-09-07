@@ -15,7 +15,7 @@
   --gold: #b68235;
   --gold-ink: #7d5a24;
   --gold-soft: rgba(182, 130, 53, 0.12);
-  --sel: rgba(182, 130, 53, 0.22);
+  --selection: rgba(182, 130, 53, 0.22);
   --shadow: rgba(32, 31, 29, 0.5);
   --header-bg: rgba(243, 242, 242, 0.9);
   --band-bg: #171614;
@@ -41,7 +41,7 @@
   --gold: #c9a25f;
   --gold-ink: #d6b374;
   --gold-soft: rgba(201, 162, 95, 0.14);
-  --sel: rgba(201, 162, 95, 0.26);
+  --selection: rgba(201, 162, 95, 0.26);
   --shadow: rgba(0, 0, 0, 0.8);
   --header-bg: rgba(25, 24, 23, 0.9);
   --band-bg: #100f0e;
@@ -68,7 +68,7 @@
     --gold: #c9a25f;
     --gold-ink: #d6b374;
     --gold-soft: rgba(201, 162, 95, 0.14);
-    --sel: rgba(201, 162, 95, 0.26);
+    --selection: rgba(201, 162, 95, 0.26);
     --shadow: rgba(0, 0, 0, 0.8);
     --header-bg: rgba(25, 24, 23, 0.9);
     --band-bg: #100f0e;
@@ -94,7 +94,7 @@
   --color-gold: var(--gold);
   --color-gold-ink: var(--gold-ink);
   --color-gold-soft: var(--gold-soft);
-  --color-sel: var(--sel);
+  --color-selection: var(--selection);
   --color-shadow: var(--shadow);
   --color-header-bg: var(--header-bg);
   --color-band-bg: var(--band-bg);
@@ -138,7 +138,7 @@ a:hover {
 }
 
 ::selection {
-  background: var(--sel);
+  background: var(--selection);
 }
 
 :focus-visible {
