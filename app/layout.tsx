@@ -20,10 +20,25 @@ const lora = Lora({
   display: "swap",
 });
 
+const siteTitle = "Martyna Kweczke";
+const siteDescription =
+  "Junior frontend and full-stack developer in Wrocław, Poland. Over a year of hands-on experience in Angular, React and TypeScript.";
+
 export const metadata: Metadata = {
-  title: "Martyna Kweczke",
-  description:
-    "Junior frontend and full-stack developer in Wrocław, Poland. Over a year of hands-on experience in Angular, React and TypeScript.",
+  title: siteTitle,
+  description: siteDescription,
+  authors: [{ name: "Martyna Kweczke" }],
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 const themeScript = `(function(){try{var t=localStorage.getItem("mk-portfolio-theme");if(t!=="light"&&t!=="dark"){t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);var l=localStorage.getItem("mk-portfolio-lang");if(l==="en"||l==="pl"){document.documentElement.lang=l;}}catch(e){}})();`;

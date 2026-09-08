@@ -1,3 +1,4 @@
+import { ContactSection } from "@/components/contact-section";
 import { CredentialsSection } from "@/components/credentials-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { Hero } from "@/components/hero";
@@ -19,6 +20,7 @@ export default function Home() {
         <SkillsSection />
         <CredentialsSection />
         <PersonalSection />
+        <ContactSection />
       </main>
     </>
   );

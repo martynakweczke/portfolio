@@ -62,7 +62,8 @@ export function Hero() {
               rel="noopener noreferrer"
               className="text-[12px] uppercase tracking-[0.14em] text-ink-3"
             >
-              GitHub&#8239;↗
+              GitHub<span aria-hidden="true">&#8239;↗</span>
+              <span className="sr-only"> ({t.a11y.newTab})</span>
             </a>
             <a
               href="https://www.linkedin.com/in/martyna-kweczke"
@@ -70,7 +71,8 @@ export function Hero() {
               rel="noopener noreferrer"
               className="text-[12px] uppercase tracking-[0.14em] text-ink-3"
             >
-              LinkedIn&#8239;↗
+              LinkedIn<span aria-hidden="true">&#8239;↗</span>
+              <span className="sr-only"> ({t.a11y.newTab})</span>
             </a>
           </div>
         </div>

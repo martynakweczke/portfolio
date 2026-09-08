@@ -1,8 +1,13 @@
+"use client";
+
+import { useLanguage } from "@/components/providers/language-provider";
 import type { Copy } from "@/lib/content";
 
 type Project = Copy["projects"][number];
 
 export function ProjectCard({ project }: { project: Project }) {
+  const { t } = useLanguage();
+
   return (
     <article className="flex flex-col gap-3.5 rounded border border-line bg-bg p-[clamp(20px,2.4vw,30px)] transition duration-[250ms] hover:-translate-y-[3px] hover:border-gold hover:shadow-[0_8px_24px_-18px_var(--shadow)]">
       {project.badge ? (
@@ -34,7 +39,8 @@ export function ProjectCard({ project }: { project: Project }) {
           rel="noopener noreferrer"
           className="self-start text-[11.5px] uppercase tracking-[0.14em]"
         >
-          {project.linkLabel}&#8239;↗
+          {project.linkLabel}<span aria-hidden="true">&#8239;↗</span>
+          <span className="sr-only"> ({t.a11y.newTab})</span>
         </a>
       ) : null}
     </article>

@@ -6,6 +6,10 @@ const en = {
   themeDark: "Dark",
   themeLight: "Light",
   themeAria: "Toggle light and dark theme",
+  a11y: {
+    newTab: "opens in a new tab",
+    download: "downloads a file",
+  },
   reposTitle: "More on GitHub",
   repos: [
     {
@@ -253,6 +257,10 @@ const pl: Copy = {
   themeDark: "Ciemny",
   themeLight: "Jasny",
   themeAria: "Przełącz motyw jasny i ciemny",
+  a11y: {
+    newTab: "otwiera się w nowej karcie",
+    download: "pobiera plik",
+  },
   reposTitle: "Więcej na GitHubie",
   repos: [
     {
