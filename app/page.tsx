@@ -1,6 +1,8 @@
+import { CredentialsSection } from "@/components/credentials-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { Hero } from "@/components/hero";
 import { NowSection } from "@/components/now-section";
+import { PersonalSection } from "@/components/personal-section";
 import { SiteHeader } from "@/components/site-header";
 import { SkillsSection } from "@/components/skills-section";
 import { WorkSection } from "@/components/work-section";
@@ -15,6 +17,8 @@ export default function Home() {
         <WorkSection />
         <ExperienceSection />
         <SkillsSection />
+        <CredentialsSection />
+        <PersonalSection />
       </main>
     </>
   );
