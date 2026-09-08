@@ -1,8 +1,13 @@
+"use client";
+
+import { useLanguage } from "@/components/providers/language-provider";
 import type { Copy } from "@/lib/content";
 
 type Repo = Copy["repos"][number];
 
 export function RepoList({ title, repos }: { title: string; repos: Repo[] }) {
+  const { t } = useLanguage();
+
   return (
     <div className="mt-[clamp(32px,4vw,56px)] border-t border-line pt-[clamp(18px,2.4vw,26px)]">
       <div className="mb-1 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
@@ -15,7 +20,8 @@ export function RepoList({ title, repos }: { title: string; repos: Repo[] }) {
           rel="noopener noreferrer"
           className="text-[11px] uppercase tracking-[0.14em]"
         >
-          github.com/martynakweczke&#8239;↗
+          github.com/martynakweczke<span aria-hidden="true">&#8239;↗</span>
+          <span className="sr-only"> ({t.a11y.newTab})</span>
         </a>
       </div>
       <ul className="m-0 list-none p-0">
