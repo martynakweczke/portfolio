@@ -13,7 +13,7 @@ export function SkillsSection() {
             {t.skills.title}
           </h2>
           <p className="m-0 text-[11px] uppercase tracking-[0.2em] text-gold-ink tabular-nums">
-            03 — {t.skills.kicker}
+            03 - {t.skills.kicker}
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-[clamp(24px,3vw,40px)]">

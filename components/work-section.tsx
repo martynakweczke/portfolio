@@ -17,7 +17,7 @@ export function WorkSection() {
           {t.work.title}
         </h2>
         <p className="m-0 text-[11px] uppercase tracking-[0.2em] text-gold-ink tabular-nums">
-          01 — {t.work.kicker}
+          01 - {t.work.kicker}
         </p>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(290px,1fr))] gap-[clamp(16px,2vw,26px)]">

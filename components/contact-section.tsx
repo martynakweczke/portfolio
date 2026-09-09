@@ -16,7 +16,7 @@ export function ContactSection() {
         <div className="flex flex-wrap items-start justify-between gap-[clamp(28px,5vw,72px)]">
           <div className="min-w-0 flex-[1_1_340px]">
             <p className="mb-4 text-[11px] uppercase tracking-[0.2em] text-band-gold tabular-nums">
-              06 — {t.contact.kicker}
+              06 - {t.contact.kicker}
             </p>
             <h2 className="mb-5 font-display text-[clamp(2.4rem,6vw,4.4rem)] font-normal leading-none tracking-[-0.02em]">
               {t.contact.title}

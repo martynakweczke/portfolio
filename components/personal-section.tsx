@@ -11,7 +11,7 @@ export function PersonalSection() {
         <div className="flex flex-wrap items-start gap-[clamp(28px,5vw,72px)]">
           <div className="min-w-0 flex-[1_1_300px]">
             <p className="mb-3.5 text-[11px] uppercase tracking-[0.2em] text-gold-ink tabular-nums">
-              05 — {t.personal.kicker}
+              05 - {t.personal.kicker}
             </p>
             <h2 className="mb-[18px] font-display text-[clamp(2rem,4.4vw,3.2rem)] font-normal leading-[1.05] tracking-[-0.01em]">
               {t.personal.title}
