@@ -20,18 +20,6 @@ const en = {
       stack: "Angular · TypeScript",
       link: "https://github.com/martynakweczke/epam-angular-courses-app",
     },
-    {
-      name: "epam-frontend-development-program",
-      body: "Capstone project from the EPAM Frontend Development internship.",
-      stack: "TypeScript · HTML · SCSS",
-      link: "https://github.com/martynakweczke/epam-frontend-development-program",
-    },
-    {
-      name: "vite-project",
-      body: "The capstone project ported to Vite.",
-      stack: "Vite · HTML",
-      link: "https://github.com/martynakweczke/vite-project",
-    },
   ],
   nav: [
     { label: "Work", href: "#work" },
