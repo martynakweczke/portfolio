@@ -34,22 +34,22 @@ const en = {
   ],
   hero: {
     kicker: "Junior frontend & full-stack developer — Wrocław, Poland",
-    lede: "Over a year of hands-on experience in Angular, React and TypeScript. I build clean, user-friendly interfaces, care about code quality more than speed, and use AI agents and LLMs as tools that let me learn faster — not as shortcuts around understanding.",
+    lede: "Over a year of hands-on experience with React, Angular, and TypeScript. I build clean, user-friendly interfaces with a strong emphasis on code quality, testing, and maintainability. I leverage AI tools and LLMs to accelerate my learning and problem-solving, using them to deepen my understanding rather than replace it.",
     available: "Open to junior roles",
     ctaMail: "Get in touch",
     ctaCv: "Download CV",
   },
   now: [
-    { k: "Currently", v: "Junior full-stack developer at beefity" },
+    { k: "Currently", v: "Junior Full-Stack Developer at beefity" },
     { k: "Based in", v: "Wrocław, Poland — on-site, hybrid or remote" },
-    { k: "Working with", v: "Angular · React · TypeScript" },
+    { k: "Working with", v: "React · Angular · TypeScript" },
   ],
   work: { title: "Selected work", kicker: "Projects" },
   projects: [
     {
       title: "beefity",
       badge: "Current",
-      meta: "Junior full-stack developer · 2025, 2026 — present",
+      meta: "Junior Full-Stack developer · 2025, 2026 — present",
       body: "A web and mobile app for people who work out and for their trainers. I started here implementing screens in JavaScript, HTML and CSS, and came back as a junior full-stack developer — now also working through the NestJS and SQL side of the product.",
       tags: ["React", "React Native", "Expo", "TypeScript", "Nativewind", "NestJS", "SQL"],
       link: "https://beefity.com/",
@@ -88,8 +88,8 @@ const en = {
       meta: "Personal project · 2026",
       body: "This site: built with Next.js and React and styled with Tailwind, responsive, bilingual and with a light and dark theme. The source lives in a public repository, so you can read the code as well as the page.",
       tags: ["Next.js", "React", "TypeScript", "Tailwind", "i18n"],
-      link: "https://github.com/martynakweczke",
-      linkLabel: "View source",
+      link: "https://martynakweczke.dev",
+      linkLabel: "martynakweczke.dev",
     },
   ],
   exp: { title: "Experience", kicker: "Work history" },
@@ -138,7 +138,7 @@ const en = {
   skillGroups: [
     {
       title: "Frameworks & libraries",
-      items: ["Angular", "React", "Next.js", "React Native", "RxJS", "NgRx", "Expo"],
+      items: ["React", "Angular", "Next.js", "React Native", "RxJS", "NgRx", "Expo"],
     },
     {
       title: "Languages & styling",
@@ -231,7 +231,7 @@ const en = {
   contact: {
     kicker: "Contact",
     title: "Let's talk.",
-    body: "I'm looking for a junior frontend or full-stack role where I can keep learning from people who care about their craft. Email is the fastest way to reach me.",
+    body: "I'm looking for a Junior Frontend or Full-stack role where I can keep learning from people who care about their craft. Email is the fastest way to reach me.",
     cv: "Curriculum vitae",
     footer: "© 2026 Martyna Kweczke · Wrocław, Poland",
   },
@@ -263,18 +263,6 @@ const pl: Copy = {
       stack: "Angular · TypeScript",
       link: "https://github.com/martynakweczke/epam-angular-courses-app",
     },
-    {
-      name: "epam-frontend-development-program",
-      body: "Projekt końcowy stażu EPAM Frontend Development.",
-      stack: "TypeScript · HTML · SCSS",
-      link: "https://github.com/martynakweczke/epam-frontend-development-program",
-    },
-    {
-      name: "vite-project",
-      body: "Projekt końcowy przeniesiony na Vite.",
-      stack: "Vite · HTML",
-      link: "https://github.com/martynakweczke/vite-project",
-    },
   ],
   nav: [
     { label: "Projekty", href: "#work" },
@@ -284,24 +272,24 @@ const pl: Copy = {
     { label: "Kontakt", href: "#contact" },
   ],
   hero: {
-    kicker: "Junior frontend & full-stack developer — Wrocław",
-    lede: "Ponad rok praktycznego doświadczenia w Angularze, Reakcie i TypeScripcie. Tworzę czyste, przyjazne użytkownikowi interfejsy, jakość kodu stawiam wyżej niż tempo, a agentów AI i modele językowe traktuję jako narzędzia do szybszej nauki — nie jako skrót zamiast zrozumienia.",
+    kicker: "Junior Frontend & Full-Stack Developer — Wrocław",
+    lede: "Ponad rok praktycznego doświadczenia w pracy z React, Angular i TypeScript. Tworzę czyste, przyjazne dla użytkownika interfejsy, kładąc duży nacisk na jakość kodu, testowanie oraz łatwość jego utrzymania. Wykorzystuję narzędzia AI i modele LLM do przyspieszenia nauki i rozwiązywania problemów — traktuję je jako wsparcie w pogłębianiu wiedzy, a nie jej zastępstwo.",
     available: "Otwarta na oferty junior",
     ctaMail: "Napisz do mnie",
     ctaCv: "Pobierz CV",
   },
   now: [
-    { k: "Obecnie", v: "Junior full-stack developer w beefity" },
+    { k: "Obecnie", v: "Junior Full-Stack Developer w beefity" },
     { k: "Lokalizacja", v: "Wrocław — praca w biurze, hybrydowa lub zdalna" },
-    { k: "Technologie", v: "Angular · React · TypeScript" },
+    { k: "Technologie", v: "React · Angular · TypeScript" },
   ],
   work: { title: "Wybrane projekty", kicker: "Projekty" },
   projects: [
     {
       title: "beefity",
       badge: "Obecnie",
-      meta: "Junior full-stack developer · 2025, 2026 — obecnie",
-      body: "Aplikacja webowa i mobilna dla osób trenujących oraz dla trenerów. Zaczynałam tu od implementacji prostych ekranów w JavaScripcie, HTML-u i CSS-ie, a wróciłam jako junior full-stack developer — dziś pracuję również po stronie NestJS i SQL.",
+      meta: "Junior Full-Stack Developer · 2025, 2026 — obecnie",
+      body: "Aplikacja webowa i mobilna dla osób trenujących oraz dla trenerów. Zaczynałam tu od implementacji prostych ekranów w JavaScripcie, HTML-u i CSS-ie, a wróciłam jako Junior Full-Stack Developer — dziś pracuję również po stronie NestJS i SQL.",
       tags: ["React", "React Native", "Expo", "TypeScript", "Nativewind", "NestJS", "SQL"],
       link: "https://beefity.com/",
       linkLabel: "beefity.com",
@@ -309,7 +297,7 @@ const pl: Copy = {
     {
       title: "Migracja platformy w Angularze",
       badge: "",
-      meta: "Rokezzz · frontend developer · 2026-05 — 2026-09",
+      meta: "Rokezzz · Frontend Developer · 2026-05 — 2026-09",
       body: "Migracja aplikacji dla klientów do najnowszej wersji Angulara wraz z refaktoryzacją, w interdyscyplinarnym zespole scrumowym: przekładanie projektów UI/UX na funkcje, ocena ich wykonalności technicznej i integracja z REST API.",
       tags: ["Angular", "RxJS", "TypeScript", "SCSS", "REST", "Git"],
       link: "",
@@ -339,8 +327,8 @@ const pl: Copy = {
       meta: "Projekt własny · 2026",
       body: "Ta strona: zbudowana w Next.js i Reakcie, stylowana Tailwindem, responsywna, dwujęzyczna, z jasnym i ciemnym motywem. Kod źródłowy jest w publicznym repozytorium — można przeczytać nie tylko stronę, ale i kod.",
       tags: ["Next.js", "React", "TypeScript", "Tailwind", "i18n"],
-      link: "https://github.com/martynakweczke",
-      linkLabel: "Zobacz kod",
+      link: "https://martynakweczke.dev",
+      linkLabel: "martynakweczke.dev",
     },
   ],
   exp: { title: "Doświadczenie", kicker: "Historia pracy" },
@@ -349,7 +337,7 @@ const pl: Copy = {
       period: "2026 — obecnie",
       role: "Junior Full-Stack Developer",
       org: "beefity",
-      body: "Powrót do produktu beefity — tym razem praca po obu stronach stosu, nie tylko nad ekranami.",
+      body: "Powrót do produktu beefity — tym razem praca po obu stronach, nie tylko od strony wizualnej.",
       tags: ["React", "React Native", "TypeScript", "NestJS", "SQL", "Git"],
     },
     {
@@ -389,7 +377,7 @@ const pl: Copy = {
   skillGroups: [
     {
       title: "Frameworki i biblioteki",
-      items: ["Angular", "React", "Next.js", "React Native", "RxJS", "NgRx", "Expo"],
+      items: ["React", "Angular", "Next.js", "React Native", "RxJS", "NgRx", "Expo"],
     },
     {
       title: "Języki i stylowanie",
