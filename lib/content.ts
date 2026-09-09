@@ -83,10 +83,10 @@ const en = {
       linkLabel: "martynakweczke.dev",
     },
     {
-      title: "Programming language quiz",
+      title: "Junior interview question platform",
       badge: "In progress",
       meta: "Personal project · 2026",
-      body: "A site for testing your knowledge of web technologies - JavaScript, TypeScript, HTML and CSS to start with, more to follow. Being built with Next.js, React and Tailwind; the link will appear here once it ships.",
+      body: "An app that collects the questions I studied while preparing for junior developer interviews, so anyone getting ready for their own can browse them - JavaScript, TypeScript, HTML and CSS to start with, more to follow. The link will appear here once it ships.",
       tags: ["Next.js", "React", "TypeScript", "Tailwind"],
       link: "",
       linkLabel: "",
@@ -225,7 +225,7 @@ const en = {
   personal: {
     kicker: "Personal",
     title: "Beyond the code",
-    body: "I came to development from dietetics, and the two have more in common than they look: both are about reading a system carefully before changing anything. Outside work I train, walk in the mountains and look after a very demanding dog - the same routine that keeps me patient with a stubborn bug.",
+    body: "I came to development from dietetics, and I've kept the same instinct: look closely at how something works, and care about getting the details right. Outside work I train, and whenever I can I love spending time in the mountains and with my dog.",
   },
   hobbies: ["Gym and a healthy lifestyle", "Hiking in the mountains", "Taking care of my lovely dog"],
   contact: {
@@ -322,10 +322,10 @@ const pl: Copy = {
       linkLabel: "martynakweczke.dev",
     },
     {
-      title: "Quiz z języków programowania",
+      title: "Platforma z pytaniami rekrutacyjnymi dla juniora",
       badge: "W trakcie",
       meta: "Projekt własny · 2026",
-      body: "Strona do sprawdzania wiedzy z technologii webowych - na początek JavaScript, TypeScript, HTML i CSS, z czasem więcej. Powstaje w Next.js, Reakcie i Tailwindzie; link pojawi się tutaj po wdrożeniu.",
+      body: "Aplikacja z pytaniami, które studiuję, przygotowując się do rozmów rekrutacyjnych na stanowisko juniora - tak, aby każdy przygotowujący się do własnej rekrutacji mógł z nich korzystać. Na początek JavaScript, TypeScript, HTML i CSS, z czasem więcej. Link pojawi się tutaj po wdrożeniu.",
       tags: ["Next.js", "React", "TypeScript", "Tailwind"],
       link: "",
       linkLabel: "",
@@ -464,13 +464,13 @@ const pl: Copy = {
   personal: {
     kicker: "Prywatnie",
     title: "Poza kodem",
-    body: "Do programowania trafiłam z dietetyki, a te dwie dziedziny mają ze sobą więcej wspólnego, niż się wydaje: w obu trzeba uważnie przeczytać system, zanim się w nim cokolwiek zmieni. Po pracy trenuję, chodzę po górach i opiekuję się bardzo wymagającym psem - ta sama rutyna pomaga mi zachować cierpliwość przy upartym bugu.",
+    body: "Do programowania trafiłam z dietetyki i został mi ten sam instynkt: uważnie patrzeć, jak coś działa, i dbać o szczegóły. Poza pracą trenuję, a kiedy tylko mogę, uwielbiam spędzać czas w górach i z moim psem.",
   },
   hobbies: ["Siłownia i zdrowy tryb życia", "Górskie wędrówki", "Opieka nad moim ukochanym psem"],
   contact: {
     kicker: "Kontakt",
     title: "Porozmawiajmy.",
-    body: "Szukam pracy jako junior frontend lub full-stack developer - w zespole, od którego mogę się uczyć i który dba o jakość tego, co tworzy. Najszybciej odpowiem na e-mail.",
+    body: "Szukam pracy jako Junior Frontend lub Full-Stack Developer - w zespole, od którego mogę się uczyć i który dba o jakość tego, co tworzy. Najszybciej odpowiem na e-mail.",
     cv: "Curriculum vitae",
     footer: "© 2026 Martyna Kweczke · Wrocław",
   },
