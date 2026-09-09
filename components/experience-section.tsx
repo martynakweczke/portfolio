@@ -13,7 +13,7 @@ export function ExperienceSection() {
             {t.exp.title}
           </h2>
           <p className="m-0 text-[11px] uppercase tracking-[0.2em] text-gold-ink tabular-nums">
-            02 — {t.exp.kicker}
+            02 - {t.exp.kicker}
           </p>
         </div>
         <ol className="m-0 list-none p-0">
@@ -49,7 +49,7 @@ export function ExperienceSection() {
         </ol>
         <div className="flex flex-wrap gap-x-[clamp(20px,4vw,56px)] gap-y-2 border-t border-line pt-[clamp(20px,2.6vw,30px)]">
           <p className="m-0 flex-[0_0_168px] whitespace-nowrap pt-1.5 text-[12px] tracking-[0.1em] text-muted tabular-nums">
-            2021 — 2024
+            2021 - 2024
           </p>
           <div className="min-w-0 flex-[1_1_320px]">
             <h3 className="mb-2.5 font-display text-[25px] font-semibold leading-[1.2]">

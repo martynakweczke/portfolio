@@ -20,7 +20,7 @@ export function CredentialsSection() {
             {t.cred.title}
           </h2>
           <p className="m-0 text-[11px] uppercase tracking-[0.2em] text-gold-ink tabular-nums">
-            04 — {t.cred.kicker}
+            04 - {t.cred.kicker}
           </p>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(310px,1fr))] gap-[clamp(28px,4vw,64px)]">
