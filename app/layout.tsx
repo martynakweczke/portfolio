@@ -32,7 +32,7 @@ const ogImage = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://martynakweczke.dev"),
+  metadataBase: new URL("https://www.martynakweczke.dev"),
   title: siteTitle,
   description: siteDescription,
   authors: [{ name: siteName }],
@@ -62,8 +62,8 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: siteName,
-  url: "https://martynakweczke.dev",
-  image: "https://martynakweczke.dev/assets/profile-picture.webp",
+  url: "https://www.martynakweczke.dev",
+  image: "https://www.martynakweczke.dev/assets/profile-picture.webp",
   jobTitle: "Junior Frontend & Full-Stack Developer",
   email: "mailto:martynakweczke@gmail.com",
   address: {
