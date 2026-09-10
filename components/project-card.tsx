@@ -32,16 +32,21 @@ export function ProjectCard({ project }: { project: Project }) {
           </li>
         ))}
       </ul>
-      {project.link ? (
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="self-start text-[11.5px] uppercase tracking-[0.14em]"
-        >
-          {project.linkLabel}<span aria-hidden="true">&#8239;↗</span>
-          <span className="sr-only"> ({t.a11y.newTab})</span>
-        </a>
+      {project.links.length > 0 ? (
+        <div className="flex flex-wrap gap-x-5 gap-y-2">
+          {project.links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11.5px] uppercase tracking-[0.14em]"
+            >
+              {link.label}<span aria-hidden="true">&#8239;↗</span>
+              <span className="sr-only"> ({t.a11y.newTab})</span>
+            </a>
+          ))}
+        </div>
       ) : null}
     </article>
   );
