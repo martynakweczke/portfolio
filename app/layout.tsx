@@ -24,6 +24,12 @@ const siteName = "Martyna Kweczke";
 const siteTitle = "Martyna Kweczke — Junior Frontend & Full-Stack Developer";
 const siteDescription =
   "Junior frontend and full-stack developer in Wrocław, Poland. Over a year of hands-on experience in Angular, React and TypeScript.";
+const ogImage = {
+  url: "/og.png",
+  width: 1200,
+  height: 630,
+  alt: "Martyna Kweczke — Junior Frontend & Full-Stack Developer, Wrocław, Poland",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://martynakweczke.dev"),
@@ -40,11 +46,13 @@ export const metadata: Metadata = {
     siteName,
     type: "website",
     locale: "en_US",
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
+    images: [ogImage],
   },
 };
 
