@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/components/providers/language-provider";
 import type { Copy } from "@/lib/content";
+import { ExternalArrow } from "@/components/external-arrow";
 
 type Project = Copy["projects"][number];
 
@@ -42,7 +43,7 @@ export function ProjectCard({ project }: { project: Project }) {
               rel="noopener noreferrer"
               className="text-[11.5px] uppercase tracking-[0.14em]"
             >
-              {link.label}<span aria-hidden="true">&#8239;↗</span>
+              {link.label}<ExternalArrow />
               <span className="sr-only"> ({t.a11y.newTab})</span>
             </a>
           ))}

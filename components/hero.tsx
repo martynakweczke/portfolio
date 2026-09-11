@@ -3,6 +3,7 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/components/providers/language-provider";
+import { ExternalArrow } from "@/components/external-arrow";
 
 const rise = (delay: string): CSSProperties => ({
   animation: `rise 0.8s cubic-bezier(0.2, 0.6, 0.2, 1) ${delay} both`,
@@ -62,7 +63,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="text-[12px] uppercase tracking-[0.14em] text-ink-3"
             >
-              GitHub<span aria-hidden="true">&#8239;↗</span>
+              GitHub<ExternalArrow />
               <span className="sr-only"> ({t.a11y.newTab})</span>
             </a>
             <a
@@ -71,7 +72,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="text-[12px] uppercase tracking-[0.14em] text-ink-3"
             >
-              LinkedIn<span aria-hidden="true">&#8239;↗</span>
+              LinkedIn<ExternalArrow />
               <span className="sr-only"> ({t.a11y.newTab})</span>
             </a>
           </div>
