@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/components/providers/language-provider";
 import type { Copy } from "@/lib/content";
+import { ExternalArrow } from "@/components/external-arrow";
 
 type Repo = Copy["repos"][number];
 
@@ -20,7 +21,7 @@ export function RepoList({ title, repos }: { title: string; repos: Repo[] }) {
           rel="noopener noreferrer"
           className="text-[11px] uppercase tracking-[0.14em]"
         >
-          github.com/martynakweczke<span aria-hidden="true">&#8239;↗</span>
+          github.com/martynakweczke<ExternalArrow />
           <span className="sr-only"> ({t.a11y.newTab})</span>
         </a>
       </div>

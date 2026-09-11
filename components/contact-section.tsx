@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/components/providers/language-provider";
+import { ExternalArrow } from "@/components/external-arrow";
 
 const bandRow =
   "flex items-baseline justify-between gap-4 py-[18px] text-band-ink no-underline transition-colors duration-200 hover:text-band-gold";
@@ -41,7 +42,7 @@ export function ContactSection() {
               >
                 <span className={bandRowName}>GitHub</span>
                 <span className={bandRowMeta}>
-                  martynakweczke<span aria-hidden="true">&#8239;↗</span>
+                  martynakweczke<ExternalArrow />
                 </span>
                 <span className="sr-only"> ({t.a11y.newTab})</span>
               </a>
@@ -55,7 +56,7 @@ export function ContactSection() {
               >
                 <span className={bandRowName}>LinkedIn</span>
                 <span className={bandRowMeta}>
-                  martyna-kweczke<span aria-hidden="true">&#8239;↗</span>
+                  martyna-kweczke<ExternalArrow />
                 </span>
                 <span className="sr-only"> ({t.a11y.newTab})</span>
               </a>
