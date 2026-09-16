@@ -8,16 +8,31 @@ type Project = Copy["projects"][number];
 
 export function ProjectCard({ project }: { project: Project }) {
   const { t } = useLanguage();
+  // The whole card opens the live project; fall back to the repository when there is none.
+  const primary =
+    project.links.find((link) => !link.href.includes("github.com")) ?? project.links[0];
 
   return (
-    <article className="flex flex-col gap-3.5 rounded border border-line bg-bg p-[clamp(20px,2.4vw,30px)] transition duration-[250ms] hover:-translate-y-[3px] hover:border-gold hover:shadow-[0_8px_24px_-18px_var(--shadow)]">
+    <article className="relative flex flex-col gap-3.5 rounded border border-line bg-bg p-[clamp(20px,2.4vw,30px)] transition duration-[250ms] hover:-translate-y-[3px] hover:border-gold hover:shadow-[0_8px_24px_-18px_var(--shadow)]">
       {project.badge ? (
         <span className="self-start rounded border border-gold px-[9px] py-1 text-[10px] uppercase tracking-[0.18em] text-gold-ink">
           {project.badge}
         </span>
       ) : null}
       <h3 className="m-0 font-display text-[27px] font-semibold leading-[1.15]">
-        {project.title}
+        {primary ? (
+          <a
+            href={primary.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-inherit! no-underline before:absolute before:inset-0 before:content-['']"
+          >
+            {project.title}
+            <span className="sr-only"> ({t.a11y.newTab})</span>
+          </a>
+        ) : (
+          project.title
+        )}
       </h3>
       <p className="m-0 text-[11px] uppercase tracking-[0.14em] text-muted tabular-nums">
         {project.meta}
@@ -41,7 +56,7 @@ export function ProjectCard({ project }: { project: Project }) {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[11.5px] uppercase tracking-[0.14em]"
+              className="relative z-10 text-[11.5px] uppercase tracking-[0.14em]"
             >
               {link.label}<ExternalArrow />
               <span className="sr-only"> ({t.a11y.newTab})</span>

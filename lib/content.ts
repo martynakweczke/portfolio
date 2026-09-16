@@ -38,6 +38,7 @@ const en = {
     available: "Open to junior roles",
     ctaMail: "Get in touch",
     ctaCv: "Download CV",
+    latestLabel: "My latest project",
   },
   now: [
     { k: "Currently", v: "Junior Full-Stack Developer at beefity" },
@@ -278,6 +279,7 @@ const pl: Copy = {
     available: "Otwarta na oferty junior",
     ctaMail: "Napisz do mnie",
     ctaCv: "Pobierz CV",
+    latestLabel: "Mój najnowszy projekt",
   },
   now: [
     { k: "Obecnie", v: "Junior Full-Stack Developer w beefity" },

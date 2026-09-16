@@ -76,6 +76,22 @@ export function Hero() {
               <span className="sr-only"> ({t.a11y.newTab})</span>
             </a>
           </div>
+          <p
+            className="mt-5 mb-0 flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] uppercase tracking-[0.14em] text-muted"
+            style={rise("0.3s")}
+          >
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-gold" />
+            {t.hero.latestLabel}:
+            <a
+              href="https://dev-interview-hub.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-ink"
+            >
+              Dev Interview Hub<ExternalArrow />
+              <span className="sr-only"> ({t.a11y.newTab})</span>
+            </a>
+          </p>
         </div>
         <figure
           className="m-0 max-w-[330px] flex-[1_1_240px] rounded border border-line bg-bg-alt p-3"
