@@ -87,7 +87,10 @@ const en = {
       meta: "Personal project · 2026",
       body: "An app that collects the questions I studied while preparing for junior developer interviews, so anyone getting ready for their own can browse them - JavaScript, TypeScript, HTML and CSS to start with, more to follow.",
       tags: ["Next.js", "React", "TypeScript", "Tailwind"],
-      links: [{ href: "https://dev-interview-hub.vercel.app/", label: "View project" }],
+      links: [
+        { href: "https://github.com/martynakweczke/dev-interview-hub", label: "View repository" },
+        { href: "https://dev-interview-hub.vercel.app/", label: "View project" },
+      ],
     },
   ],
   exp: { title: "Experience", kicker: "Work history" },
@@ -324,7 +327,10 @@ const pl: Copy = {
       meta: "Projekt własny · 2026",
       body: "Aplikacja z pytaniami, które studiuję, przygotowując się do rozmów rekrutacyjnych na stanowisko juniora - tak, aby każdy przygotowujący się do własnej rekrutacji mógł z nich korzystać. Na początek JavaScript, TypeScript, HTML i CSS, z czasem więcej.",
       tags: ["Next.js", "React", "TypeScript", "Tailwind"],
-      links: [{ href: "https://dev-interview-hub.vercel.app/", label: "Zobacz projekt" }],
+      links: [
+        { href: "https://github.com/martynakweczke/dev-interview-hub", label: "Zobacz repozytorium" },
+        { href: "https://dev-interview-hub.vercel.app/", label: "Zobacz projekt" },
+      ],
     },
   ],
   exp: { title: "Doświadczenie", kicker: "Historia pracy" },
