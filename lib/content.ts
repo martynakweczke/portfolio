@@ -55,6 +55,17 @@ const en = {
       links: [{ href: "https://beefity.com/", label: "beefity.com" }],
     },
     {
+      title: "Interview question platform",
+      badge: "Current",
+      meta: "Personal project · 2026",
+      body: "An app that collects the questions I studied while preparing for Junior Developer interviews, so anyone getting ready for their own can browse them - JavaScript, TypeScript, HTML and CSS to start with, more to follow.",
+      tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+      links: [
+        { href: "https://github.com/martynakweczke/dev-interview-hub", label: "View repository" },
+        { href: "https://dev-interview-hub.vercel.app/", label: "View project" },
+      ],
+    },
+    {
       title: "Angular platform migration",
       badge: "",
       meta: "Rokezzz · frontend developer · 2026-05 - 2026-09",
@@ -80,17 +91,6 @@ const en = {
       body: "This site: built with Next.js and React and styled with Tailwind, responsive, bilingual and with a light and dark theme. The source lives in a public repository, so you can read the code as well as the page.",
       tags: ["Next.js", "React", "TypeScript", "Tailwind", "i18n"],
       links: [{ href: "https://github.com/martynakweczke/portfolio", label: "View repository" }],
-    },
-    {
-      title: "Junior interview question platform",
-      badge: "In progress",
-      meta: "Personal project · 2026",
-      body: "An app that collects the questions I studied while preparing for junior developer interviews, so anyone getting ready for their own can browse them - JavaScript, TypeScript, HTML and CSS to start with, more to follow.",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind"],
-      links: [
-        { href: "https://github.com/martynakweczke/dev-interview-hub", label: "View repository" },
-        { href: "https://dev-interview-hub.vercel.app/", label: "View project" },
-      ],
     },
   ],
   exp: { title: "Experience", kicker: "Work history" },
@@ -295,6 +295,17 @@ const pl: Copy = {
       links: [{ href: "https://beefity.com/", label: "beefity.com" }],
     },
     {
+      title: "Platforma z pytaniami rekrutacyjnymi",
+      badge: "Obecnie",
+      meta: "Projekt własny · 2026",
+      body: "Aplikacja z pytaniami, które studiuję, przygotowując się do rozmów rekrutacyjnych na stanowisko Junior Frontend - tak, aby każdy przygotowujący się do własnej rekrutacji mógł z nich korzystać. Na początek JavaScript, TypeScript, HTML i CSS, z czasem więcej.",
+      tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+      links: [
+        { href: "https://github.com/martynakweczke/dev-interview-hub", label: "Zobacz repozytorium" },
+        { href: "https://dev-interview-hub.vercel.app/", label: "Zobacz projekt" },
+      ],
+    },
+    {
       title: "Migracja platformy w Angularze",
       badge: "",
       meta: "Rokezzz · Frontend Developer · 2026-05 - 2026-09",
@@ -320,17 +331,6 @@ const pl: Copy = {
       body: "Ta strona: zbudowana w Next.js i Reakcie, stylowana Tailwindem, responsywna, dwujęzyczna, z jasnym i ciemnym motywem. Kod źródłowy jest w publicznym repozytorium - można przeczytać nie tylko stronę, ale i kod.",
       tags: ["Next.js", "React", "TypeScript", "Tailwind", "i18n"],
       links: [{ href: "https://github.com/martynakweczke/portfolio", label: "Zobacz repozytorium" }],
-    },
-    {
-      title: "Platforma z pytaniami rekrutacyjnymi dla juniora",
-      badge: "W trakcie",
-      meta: "Projekt własny · 2026",
-      body: "Aplikacja z pytaniami, które studiuję, przygotowując się do rozmów rekrutacyjnych na stanowisko juniora - tak, aby każdy przygotowujący się do własnej rekrutacji mógł z nich korzystać. Na początek JavaScript, TypeScript, HTML i CSS, z czasem więcej.",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind"],
-      links: [
-        { href: "https://github.com/martynakweczke/dev-interview-hub", label: "Zobacz repozytorium" },
-        { href: "https://dev-interview-hub.vercel.app/", label: "Zobacz projekt" },
-      ],
     },
   ],
   exp: { title: "Doświadczenie", kicker: "Historia pracy" },
