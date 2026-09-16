@@ -49,6 +49,8 @@ const en = {
   projects: [
     {
       title: "beefity",
+      featured: true,
+      image: "/assets/project-beefity.webp",
       badge: "Current",
       meta: "Junior Full-Stack developer · 2025, 2026 - present",
       body: "A web and mobile app for people who work out and for their trainers. I started here implementing screens in JavaScript, HTML and CSS, and came back as a Junior Full-Stack Developer - now also working through the NestJS and SQL side of the product.",
@@ -57,6 +59,8 @@ const en = {
     },
     {
       title: "Interview question platform",
+      featured: true,
+      image: "/assets/project-dev-interview-hub.webp",
       badge: "Current",
       meta: "Personal project · 2026",
       body: "An app that collects the questions I studied while preparing for Junior Developer interviews, so anyone getting ready for their own can browse them - JavaScript, TypeScript, HTML and CSS to start with, more to follow.",
@@ -290,6 +294,8 @@ const pl: Copy = {
   projects: [
     {
       title: "beefity",
+      featured: true,
+      image: "/assets/project-beefity.webp",
       badge: "Obecnie",
       meta: "Junior Full-Stack Developer · 2025, 2026 - obecnie",
       body: "Aplikacja webowa i mobilna dla osób trenujących oraz dla trenerów. Zaczynałam tu od implementacji prostych ekranów w JavaScripcie, HTML-u i CSS-ie, a wróciłam jako Junior Full-Stack Developer - dziś pracuję również po stronie NestJS i SQL.",
@@ -298,6 +304,8 @@ const pl: Copy = {
     },
     {
       title: "Platforma z pytaniami rekrutacyjnymi",
+      featured: true,
+      image: "/assets/project-dev-interview-hub.webp",
       badge: "Obecnie",
       meta: "Projekt własny · 2026",
       body: "Aplikacja z pytaniami, które studiuję, przygotowując się do rozmów rekrutacyjnych na stanowisko Junior Frontend - tak, aby każdy przygotowujący się do własnej rekrutacji mógł z nich korzystać. Na początek JavaScript, TypeScript, HTML i CSS, z czasem więcej.",

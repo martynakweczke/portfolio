@@ -6,6 +6,8 @@ import { RepoList } from "@/components/repo-list";
 
 export function WorkSection() {
   const { t } = useLanguage();
+  const featured = t.projects.filter((project) => project.featured);
+  const others = t.projects.filter((project) => !project.featured);
 
   return (
     <section
@@ -20,8 +22,13 @@ export function WorkSection() {
           01 - {t.work.kicker}
         </p>
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(290px,1fr))] gap-[clamp(16px,2vw,26px)]">
-        {t.projects.map((project) => (
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] gap-[clamp(16px,2vw,26px)]">
+        {featured.map((project) => (
+          <ProjectCard key={project.title} project={project} />
+        ))}
+      </div>
+      <div className="mt-[clamp(16px,2vw,26px)] grid grid-cols-[repeat(auto-fit,minmax(min(100%,290px),1fr))] gap-[clamp(16px,2vw,26px)]">
+        {others.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
       </div>
