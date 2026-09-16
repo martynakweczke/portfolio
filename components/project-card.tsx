@@ -8,7 +8,6 @@ type Project = Copy["projects"][number];
 
 export function ProjectCard({ project }: { project: Project }) {
   const { t } = useLanguage();
-  // The whole card opens the live project; fall back to the repository when there is none.
   const primary =
     project.links.find((link) => !link.href.includes("github.com")) ?? project.links[0];
 
