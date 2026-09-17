@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Martyna Kweczke — Portfolio
 
-## Getting Started
+My personal portfolio site. I'm a junior frontend and full-stack developer based in Wrocław, Poland.
 
-First, run the development server:
+**Live site: [martynakweczke.dev](https://www.martynakweczke.dev)**
+
+<a href="https://www.martynakweczke.dev">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/screenshot-dark.png">
+    <img alt="Screenshot of the portfolio homepage" src="docs/screenshot-light.png">
+  </picture>
+</a>
+
+## Features
+
+- **Bilingual:** English and Polish, switchable from the header
+- **Light and dark theme:** follows the system setting by default and remembers your choice
+- **Responsive:** laptop, tablet and phone layouts
+- **SEO-ready:** Open Graph and Twitter cards, a canonical URL and JSON-LD `Person` data
+- **Accessible:** semantic sections, labelled controls and screen-reader hints for links that open in a new tab or download a file
+- **Static export:** built with `output: "export"`, so the site deploys as plain static files
+
+## Sections
+
+Hero · Now · Selected work · Experience · Skills · Credentials · Personal · Contact
+
+## Tech stack
+
+- [Next.js 16](https://nextjs.org) (App Router)
+- [React 19](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS 4](https://tailwindcss.com)
+- Fonts: Cormorant Garamond and Lora through `next/font`
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script          | What it does                                     |
+| --------------- | ------------------------------------------------ |
+| `npm run dev`   | Starts the development server                    |
+| `npm run build` | Builds the static site into `out/`               |
+| `npm run lint`  | Runs ESLint                                      |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+app/          layout, metadata and the home page
+components/   page sections, header, theme and language toggles
+lib/          content (EN/PL), theme and language stores
+public/       CV, profile picture, project images, OG image
+docs/         README screenshots
+```
 
-To learn more about Next.js, take a look at the following resources:
+All the text on the site lives in [`lib/content.ts`](lib/content.ts), with separate `en` and `pl` objects.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: [martynakweczke@gmail.com](mailto:martynakweczke@gmail.com)
+- LinkedIn: [martyna-kweczke](https://www.linkedin.com/in/martyna-kweczke)
+- GitHub: [@martynakweczke](https://github.com/martynakweczke)
