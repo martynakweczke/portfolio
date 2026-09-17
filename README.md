@@ -1,6 +1,6 @@
 # Martyna Kweczke — Portfolio
 
-My personal portfolio site. I'm a junior frontend and full-stack developer based in Wrocław, Poland.
+My personal portfolio site. I'm a Junior Frontend and Full-Stack Developer based in Wrocław, Poland.
 
 **Live site: [martynakweczke.dev](https://www.martynakweczke.dev)**
 
