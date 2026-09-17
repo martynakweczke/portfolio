@@ -43,7 +43,7 @@ const en = {
   now: [
     { k: "Currently", v: "Junior Full-Stack Developer at beefity" },
     { k: "Based in", v: "Wrocław, Poland - on-site, hybrid or remote" },
-    { k: "Working with", v: "React · Angular · TypeScript" },
+    { k: "Working with", v: "React · React\u00A0Native · Angular · TypeScript · Tailwind\u00A0CSS" },
   ],
   work: { title: "Selected work", kicker: "Projects" },
   projects: [
@@ -54,7 +54,7 @@ const en = {
       badge: "Current",
       meta: "Junior Full-Stack developer · 2025, 2026 - present",
       body: "A web and mobile app for people who work out and for their trainers. I started here implementing screens in JavaScript, HTML and CSS, and came back as a Junior Full-Stack Developer - now also working through the NestJS and SQL side of the product.",
-      tags: ["React", "React Native", "Expo", "TypeScript", "Nativewind", "NestJS", "SQL"],
+      tags: ["React", "React Native", "Expo", "TypeScript", "Nativewind", "NestJS", "SQL", "Vitest"],
       links: [{ href: "https://beefity.com/", label: "beefity.com" }],
     },
     {
@@ -64,7 +64,7 @@ const en = {
       badge: "Current",
       meta: "Personal project · 2026",
       body: "An app that collects the questions I studied while preparing for Junior Developer interviews, so anyone getting ready for their own can browse them - JavaScript, TypeScript, HTML and CSS to start with, more to follow.",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+      tags: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
       links: [
         { href: "https://github.com/martynakweczke/dev-interview-hub", label: "View repository" },
         { href: "https://dev-interview-hub.vercel.app/", label: "View project" },
@@ -83,7 +83,7 @@ const en = {
       badge: "",
       meta: "Frontend Development Program · 2025",
       body: "The closing project of EPAM's Frontend Development Program - built from scratch with HTML, CSS, JavaScript and TypeScript, and held to the program's linting, review and code-quality standards.",
-      tags: ["JavaScript", "TypeScript", "HTML", "SCSS", "ESLint", "SonarQube"],
+      tags: ["JavaScript", "TypeScript", "HTML", "SCSS", "ESLint", "SonarQube", "Vercel"],
       links: [
         { href: "https://github.com/martynakweczke/epam-frontend-development-program", label: "View repository" },
         { href: "https://vite-project-xi-hazel.vercel.app/", label: "View project" },
@@ -94,7 +94,7 @@ const en = {
       badge: "",
       meta: "Personal project · 2026",
       body: "This site: built with Next.js and React and styled with Tailwind, responsive, bilingual and with a light and dark theme. The source lives in a public repository, so you can read the code as well as the page.",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind", "i18n"],
+      tags: ["Next.js", "React", "TypeScript", "Tailwind", "i18n", "Vercel"],
       links: [{ href: "https://github.com/martynakweczke/portfolio", label: "View repository" }],
     },
   ],
@@ -105,7 +105,7 @@ const en = {
       role: "Junior Full-Stack Developer",
       org: "beefity",
       body: "Back on the beefity product, now working across the stack rather than only on screens.",
-      tags: ["React", "React Native", "TypeScript", "NestJS", "SQL", "Git"],
+      tags: ["React", "React Native", "TypeScript", "NestJS", "SQL", "Git", "Vitest"],
     },
     {
       period: "2026-05 - 2026-09",
@@ -149,6 +149,10 @@ const en = {
     {
       title: "Languages & styling",
       items: ["TypeScript", "JavaScript", "HTML", "CSS", "SCSS", "Tailwind / Nativewind"],
+    },
+    {
+      title: "Testing & deployment",
+      items: ["Vitest", "Vercel"],
     },
     {
       title: "Tooling & practice",
@@ -288,7 +292,7 @@ const pl: Copy = {
   now: [
     { k: "Obecnie", v: "Junior Full-Stack Developer w beefity" },
     { k: "Lokalizacja", v: "Wrocław - praca w biurze, hybrydowa lub zdalna" },
-    { k: "Technologie", v: "React · Angular · TypeScript" },
+    { k: "Technologie", v: "React · React\u00A0Native · Angular · TypeScript · Tailwind\u00A0CSS" },
   ],
   work: { title: "Wybrane projekty", kicker: "Projekty" },
   projects: [
@@ -299,7 +303,7 @@ const pl: Copy = {
       badge: "Obecnie",
       meta: "Junior Full-Stack Developer · 2025, 2026 - obecnie",
       body: "Aplikacja webowa i mobilna dla osób trenujących oraz dla trenerów. Zaczynałam tu od implementacji prostych ekranów w JavaScripcie, HTML-u i CSS-ie, a wróciłam jako Junior Full-Stack Developer - dziś pracuję również po stronie NestJS i SQL.",
-      tags: ["React", "React Native", "Expo", "TypeScript", "Nativewind", "NestJS", "SQL"],
+      tags: ["React", "React Native", "Expo", "TypeScript", "Nativewind", "NestJS", "SQL", "Vitest"],
       links: [{ href: "https://beefity.com/", label: "beefity.com" }],
     },
     {
@@ -309,7 +313,7 @@ const pl: Copy = {
       badge: "Obecnie",
       meta: "Projekt własny · 2026",
       body: "Aplikacja z pytaniami, które studiuję, przygotowując się do rozmów rekrutacyjnych na stanowisko Junior Frontend - tak, aby każdy przygotowujący się do własnej rekrutacji mógł z nich korzystać. Na początek JavaScript, TypeScript, HTML i CSS, z czasem więcej.",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+      tags: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
       links: [
         { href: "https://github.com/martynakweczke/dev-interview-hub", label: "Zobacz repozytorium" },
         { href: "https://dev-interview-hub.vercel.app/", label: "Zobacz projekt" },
@@ -328,7 +332,7 @@ const pl: Copy = {
       badge: "",
       meta: "Frontend Development Program · 2025",
       body: "Projekt zamykający program EPAM Frontend Development - zbudowany od zera w HTML-u, CSS-ie, JavaScripcie i TypeScripcie, zgodnie ze standardami lintowania i code review obowiązującymi w programie.",
-      tags: ["JavaScript", "TypeScript", "HTML", "SCSS", "ESLint", "SonarQube"],
+      tags: ["JavaScript", "TypeScript", "HTML", "SCSS", "ESLint", "SonarQube", "Vercel"],
       links: [
         { href: "https://github.com/martynakweczke/epam-frontend-development-program", label: "Zobacz repozytorium" },
         { href: "https://vite-project-xi-hazel.vercel.app/", label: "Zobacz projekt" },
@@ -339,7 +343,7 @@ const pl: Copy = {
       badge: "",
       meta: "Projekt własny · 2026",
       body: "Ta strona: zbudowana w Next.js i Reakcie, stylowana Tailwindem, responsywna, dwujęzyczna, z jasnym i ciemnym motywem. Kod źródłowy jest w publicznym repozytorium - można przeczytać nie tylko stronę, ale i kod.",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind", "i18n"],
+      tags: ["Next.js", "React", "TypeScript", "Tailwind", "i18n", "Vercel"],
       links: [{ href: "https://github.com/martynakweczke/portfolio", label: "Zobacz repozytorium" }],
     },
   ],
@@ -350,7 +354,7 @@ const pl: Copy = {
       role: "Junior Full-Stack Developer",
       org: "beefity",
       body: "Powrót do produktu beefity - tym razem praca po obu stronach, nie tylko od strony wizualnej.",
-      tags: ["React", "React Native", "TypeScript", "NestJS", "SQL", "Git"],
+      tags: ["React", "React Native", "TypeScript", "NestJS", "SQL", "Git", "Vitest"],
     },
     {
       period: "2026-05 - 2026-09",
@@ -394,6 +398,10 @@ const pl: Copy = {
     {
       title: "Języki i stylowanie",
       items: ["TypeScript", "JavaScript", "HTML", "CSS", "SCSS", "Tailwind / Nativewind"],
+    },
+    {
+      title: "Testy i wdrożenia",
+      items: ["Vitest", "Vercel"],
     },
     {
       title: "Narzędzia i praktyki",
