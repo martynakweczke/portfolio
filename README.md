@@ -31,6 +31,7 @@ Hero · Now · Selected work · Experience · Skills · Credentials · Personal 
 - [TypeScript](https://www.typescriptlang.org)
 - [Tailwind CSS 4](https://tailwindcss.com)
 - Fonts: Cormorant Garamond and Lora through `next/font`
+- Hosted on [Vercel](https://vercel.com)
 
 ## Getting started
 
